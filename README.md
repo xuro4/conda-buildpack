@@ -64,7 +64,7 @@ $ git push heroku master
 You can also add it to upcoming builds of an existing application:
 
 ```console
-$ heroku config:add BUILDPACK_URL=https://github.com/kennethreitz/conda-buildpack.git
+$ heroku buildpacks:set https://github.com/trib3/conda-buildpack.git -a [app-name]
 ```
 
 
