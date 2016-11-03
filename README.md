@@ -3,6 +3,8 @@ Conda Buildpack
 
 This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks) for [Conda](http://conda.pydata.org/), the Python distribution for scientific computing by Continuum Analytics.
 
+We use Python 3 with Miniconda3. 
+
 This buildpack enables the installation of binary packages through the
 open source [conda](http://conda.pydata.org/) application.  Conda is
 recognized as being core to Continuum's Anaconda Scientific Python distro
@@ -21,7 +23,7 @@ everything you can and still use pip for anything you can't.
 Usage
 -----
 
-You can also add it to upcoming builds of an existing application:
+You can add it to upcoming builds of an existing application:
 
 ```console
 $ heroku buildpacks:set https://github.com/trib3/conda-buildpack.git -a [app-name]
