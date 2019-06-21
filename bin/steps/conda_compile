@@ -14,7 +14,7 @@ conda install nomkl
 
 if [ -f conda-requirements.txt ]; then
     puts-step "Installing dependencies using Conda"
-    conda config --add channels https://anaconda.org/anaconda/
+    conda config --add channels https://repo.continuum.io/pkgs/main/
     conda install --file conda-requirements.txt --yes | indent
 fi
 
